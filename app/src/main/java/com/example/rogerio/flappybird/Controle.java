@@ -85,8 +85,6 @@ public class Controle extends SurfaceView implements Runnable {
 
                 canvas.drawBitmap(fundo, posIniFundo, 0, paint);
 
-                //para pintar a segunda imagem, verificamos se a posição inicial do fundo atingiu um
-                // valor negativo. se atingiu, vamos pintar a segunda imagem
                 if (posIniFundo < 0) {
                     canvas.drawBitmap(fundo, largFundo + posIniFundo, 0, paint);
                 }
